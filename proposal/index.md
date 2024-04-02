@@ -1,11 +1,13 @@
-# Proposal
+# Proposal: `rptcam`
 
 ## Overview
 
 Title: `rptcam`
 
-Summary: Implementing a realistic camera model on top of `rpt`, a Rust pathtracing framework, by adding support
-for different aperture shapes, lens configurations, and autofocus features.
+Summary: For our project, we plan to implement a realistic camera model on top of [`rpt`](https://github.com/ekzhang/rpt),
+a Rust pathtracing framework, by adding support for different aperture shapes, lens configurations, and autofocus features.
+With this model we will render a series of photorealistic images and highlight photographic features
+such as depth of field, bokeh, and lens distortions.
 
 Team members:
 * Rahul Kumar (284A)
@@ -40,25 +42,31 @@ The main questions our project answers are related to the APIs and representatio
 ## Schedule
 
 Week 1:
+
 Aperture shapes
 - Determine the format in which to provide custom aperture shapes to the framework.
 - Implement the code for converting this format into something that can be used in Rust.
 - Modify the raytracing algorithm to sample from within the given aperture, rather from a circular aperture.
+
 Camera lenses
 - Determine the format in which to provide custom lens configurations to the framework (may need to make simplifying assumptions such as the lenses being cylindrically symmetrical).
 - Implement the code for converting this format into something that can be used in Rust.
 
 Week 2:
+
 Camera lenses
 - Implement code that calculates the refraction through the lenses and modify the ray sampling algorithm to only sample rays that pass through the aperture and hit the sensor.
 
 Week 3:
+
 Camera lenses
 - Put together a couple of realistic lens models with reference photos, then test that the framework accurately emulates the real camera.
+
 Autofocus
 - Implement contrast-based autofocus, and test this with a lens with a small depth-of-field.
 
 Week 4:
+
 Testing/final products
 - Clean up code and fix any bugs
 - Put together final renders that were listed in the "Goals and Deliverables" section
