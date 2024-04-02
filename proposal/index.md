@@ -1,4 +1,4 @@
-# Proposal: `rptcam`
+# Proposal: rptcam
 
 ## Overview
 
