@@ -7,7 +7,11 @@ Title: `rptcam`
 Summary: Implementing a realistic camera model on top of `rpt`, a Rust pathtracing framework, by adding support
 for different aperture shapes, lens configurations, and autofocus features.
 
-Team members: Rahul Kumar, Rohan Kumar, Lucy Meng, and Michael Yu
+Team members:
+* Rahul Kumar (284A)
+* Rohan Kumar (184)
+* Lucy Meng (184)
+* Michael Yu (184)
 
 ## Problem Description
 
@@ -58,6 +62,7 @@ Week 4:
 Testing/final products
 - Clean up code and fix any bugs
 - Put together final renders that were listed in the "Goals and Deliverables" section
+- (Stretch) Implement wavelength-dependent effects, such as chromatic aberration
 
 ## Resources
 
@@ -66,5 +71,7 @@ We plan to build on top of [`rpt`](https://github.com/ekzhang/rpt), a CPU-based 
 References:
 
 ["A Realistic Camera Model for Computer Graphics"](https://www.cs.utexas.edu/~fussell/courses/cs395t/lens.pdf)
+
 ["Camera Models and Optical Systems Used in Computer Graphics: Part I, Object-Based Techniques"](https://people.eecs.berkeley.edu/~barsky/VisRendPapers/survey1.pdf)
+
 [Physically Based Rendering: Camera Models](https://www.pbr-book.org/3ed-2018/Camera_Models)
