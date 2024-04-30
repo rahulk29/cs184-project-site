@@ -15,9 +15,7 @@
   <p>Focus distance:</p>
   <input id="focus" type="range" min="0" max="13" value="0">
   <p>Aperture size:</p>
-  <input id="apertureSize" type="range" min="0" max="9" value="0">
-  <p>Chromatic aberration:</p>
-  <input id="ca" type="range" min="0" max="4" value="0">
+  <input id="apertureSize" type="range" min="0" max="4" value="0">
   <p>Aperture shape:</p>
   <select id="apertureShape">
     <option value="0">Circle</option>
@@ -28,6 +26,9 @@
   <p>Lens configuration:</p>
   <select id="lens">
     <option value="singlelens">Single</option>
+    <option value="singlelens_vno10">Single Dispersive (Vno = 10)</option>
+    <option value="singlelens_vno1">Single Dispersive (Vno = 1)</option>
+    <option value="achromatic">Achromatic Doublet (Vno1 = 3, Vno2 = 1)</option>
   </select>
 </div>
 
