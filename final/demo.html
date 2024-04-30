@@ -10,6 +10,7 @@
   <p>Scene:</p>
   <select id="scene">
     <option value="bokeh">Bokeh</option>
+    <option value="rustacean">Rustacean</option>
   </select>
   <p>Focus distance:</p>
   <input id="focus" type="range" min="0" max="13" value="0">
@@ -26,7 +27,7 @@
   </select>
   <p>Lens configuration:</p>
   <select id="lens">
-    <option value="single">Single</option>
+    <option value="singlelens">Single</option>
   </select>
 </div>
 
@@ -42,7 +43,7 @@ var lens = document.getElementById("lens");
 var display = document.getElementById("display");
 
 function setDisplay() {
-  display.src = `images/${scene.value}_shape${apertureShape.value}_aperture${apertureSize.value}_dist${focus.value}.png`;
+  display.src = `images/${scene.value}_${lens.value}_shape${apertureShape.value}_aperture${apertureSize.value}_dist${focus.value}.png`;
 }
 
 scene.oninput = setDisplay;
